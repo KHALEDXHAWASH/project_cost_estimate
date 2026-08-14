@@ -4,24 +4,23 @@
     <menuitem
         id="project_cost_menu"
         name="Cost Estimates"
-        parent="project.menu_main_pm"
-        sequence="1"
+        sequence="10"
     />
 
     <menuitem
         id="project_estimate_menu"
         name="Estimates"
-        parent="project.menu_main_pm"
+        parent="project_cost_menu"
         action="project_estimate_action"
-        sequence="2"
+        sequence="20"
     />
 
     <menuitem
         id="project_breakdown_menu"
         name="Breakdowns"
-        parent="project.menu_main_pm"
+        parent="project_cost_menu"
         action="project_breakdown_action"
-        sequence="3"
+        sequence="30"
     />
 
 </odoo>
