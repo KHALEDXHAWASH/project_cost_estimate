@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Groups -->
+
+    <record id="user" model="res.groups">
+        <field name="name">Project Estimate Cost User</field>
+    </record>
+
+    <record id="manager" model="res.groups">
+        <field name="name">Project Estimate Cost Manager</field>
+    </record>
+
+    <record id="owner" model="res.groups">
+        <field name="name">Project Estimate Cost Owner</field>
+    </record>
+
+
+    <!-- Manager Rule -->
+
+    <record id="manager_rule" model="ir.rule">
+        <field name="name">Project Estimate Cost Manager All Records</field>
+        <field name="model_id" ref="model_project_cost_estimate"/>
+        <field name="groups" eval="[(4, ref('project_cost.manager'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+
+    <!-- Owner Rule -->
+
+    <record id="owner_rule" model="ir.rule">
+        <field name="name">Project Estimate Cost Owner All Records</field>
+        <field name="model_id" ref="model_project_cost_estimate"/>
+        <field name="groups" eval="[(4, ref('project_cost.owner'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+</odoo>

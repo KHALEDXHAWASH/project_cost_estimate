@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <menuitem
+        id="project_cost_menu"
+        name="Cost Estimates"
+        parent="project.menu_main_pm"
+        sequence="1"
+    />
+
+    <menuitem
+        id="project_estimate_menu"
+        name="Estimates"
+        parent="project.menu_main_pm"
+        action="project_estimate_action"
+        sequence="2"
+    />
+
+    <menuitem
+        id="project_breakdown_menu"
+        name="Breakdowns"
+        parent="project.menu_main_pm"
+        action="project_breakdown_action"
+        sequence="3"
+    />
+
+</odoo>
