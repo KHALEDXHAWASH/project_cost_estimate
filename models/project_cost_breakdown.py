@@ -1,7 +1,10 @@
 from odoo import api, fields, models
+
 class ProjectCostBreakdown(models.Model):
+
     _name="project.cost.breakdown"
     _description = "Items prices"
+
     name=fields.Char(string="Item")
     quantity=fields.Float(string="Quantity",default=1)
     unit_cost=fields.Float(string="Unit price")

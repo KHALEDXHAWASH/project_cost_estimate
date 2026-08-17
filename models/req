@@ -23,9 +23,9 @@ Represents individual cost items, like labor, equipment, software licenses, etc.
 # subtotal: Float (computed = quantity × unit_cost)
 
 **UI Requirements
-Add a smart button in the project.project form to view related cost estimates
-add latest cost analysis in project kanban view
-create kanban view for main model
+#Add a smart button in the project.project form to view related cost estimates
+#add latest cost analysis in project kanban view
+#create kanban view for main model
 
 Access & Security
 #every project user can create cost analysis(>>draft)

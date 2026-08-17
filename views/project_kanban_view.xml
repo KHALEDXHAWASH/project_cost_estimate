@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="project_project_kanban_cost_estimate" model="ir.ui.view">
+        <field name="name">project.project.kanban.cost.estimate</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban"/>
+
+        <field name="arch" type="xml">
+
+            <xpath expr="//kanban" position="inside">
+                <field name="latest_cost_estimate_id"/>
+                <field name="latest_cost"/>
+            </xpath>
+
+
+            <xpath expr="//div[hasclass('o_project_kanban_body')]" position="inside">
+
+                <div class="mt-2">
+
+                    <strong>Latest Cost Analysis</strong>
+
+                    <div>
+                        <span>Estimated Cost: </span>
+                        <field name="latest_cost"/>
+                    </div>
+
+                    <div t-if="record.latest_cost_estimate_id.raw_value">
+                        <span>Status: </span>
+                        <field name="latest_cost_estimate_id"/>
+                    </div>
+
+                </div>
+
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

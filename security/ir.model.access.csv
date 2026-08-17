@@ -1,7 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_project_cost_estimate_user,project.cost.estimate.user,model_project_cost_estimate,project_cost.user,1,1,1,0
-access_project_cost_estimate_manager,project.cost.estimate.manager,model_project_cost_estimate,project_cost.manager,1,1,1,1
-access_project_cost_estimate_owner,project.cost.estimate.owner,model_project_cost_estimate,project_cost.owner,1,1,0,0
-access_project_cost_breakdown_user,project.cost.breakdown.user,model_project_cost_breakdown,project_cost.user,1,1,1,0
-access_project_cost_breakdown_manager,project.cost.breakdown.manager,model_project_cost_breakdown,project_cost.manager,1,1,1,1
-access_project_cost_breakdown_owner,project.cost.breakdown.owner,model_project_cost_breakdown,project_cost.owner,1,0,0,0
+access_project_cost_estimate_user,project.cost.estimate.user,model_project_cost_estimate,user,1,1,1,0
+access_project_cost_estimate_manager,project.cost.estimate.manager,model_project_cost_estimate,manager,1,1,1,1
+access_project_cost_estimate_owner,project.cost.estimate.owner,model_project_cost_estimate,owner,1,1,0,0
+access_project_cost_breakdown_user,project.cost.breakdown.user,model_project_cost_breakdown,user,1,1,1,0
+access_project_cost_breakdown_manager,project.cost.breakdown.manager,model_project_cost_breakdown,manager,1,1,1,1
+access_project_cost_breakdown_owner,project.cost.breakdown.owner,model_project_cost_breakdown,owner,1,0,0,0
