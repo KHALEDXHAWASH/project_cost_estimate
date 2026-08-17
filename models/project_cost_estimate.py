@@ -60,6 +60,7 @@ class ProjectCostEstimate(models.Model):
                         "email_to": record.create_uid.email,
                     },
                 )
+
     def state_action_draft(self):
         for record in self:
             record.status = "draft"
